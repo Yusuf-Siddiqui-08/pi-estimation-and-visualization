@@ -52,6 +52,7 @@ def calculateAreas(polySideLength):
 
 def drawVizualization():
     t.penup()
+    t.clear()
     t.goto(0, 0)
     t.dot(5, "black")
     info = getPositions(angle, n, r)
@@ -71,10 +72,11 @@ def drawVizualization():
     t.circle(r)
     t.penup()
     t.goto(0, -300)
-    t.write("Press R to reset. "
-            "\n Press Q to quit. "
-            "\n Left-Click to increase the number of sides."
-            "\n Right-Click to decrease the number of sides.",
+    t.write("Don't spam the controls!"
+            "\nPress R to reset. "
+            "\nPress Q to quit. "
+            "\nLeft-Click to increase the number of sides."
+            "\nRight-Click to decrease the number of sides.",
             False, align="center", font=("Arial", 12, "normal"))
     areaInfo = calculateAreas(s)
     t.goto(-300, 200)
@@ -104,6 +106,8 @@ def clickRight(x, y):
 
 def execMain(_init: bool = True):
     t.clear()
+    t.goto(0,0)
+    t.penup()
     if _init:
         init()
     drawVizualization()
