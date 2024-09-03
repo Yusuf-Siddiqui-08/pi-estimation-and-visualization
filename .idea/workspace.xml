@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a770f19-2ad2-4106-97bc-9083bb370bb5" name="Changes" comment="general fixes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-    </list>
+    <list default="true" id="3a770f19-2ad2-4106-97bc-9083bb370bb5" name="Changes" comment="added colours, option to specify the number of sides, general fixes and fixed formatting" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -92,7 +89,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724790316140</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added colours, option to specify the number of sides, general fixes and fixed formatting">
+      <option name="closed" value="true" />
+      <created>1725383940169</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1725383940169</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -109,6 +114,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added main.py" />
     <MESSAGE value="general fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="general fixes" />
+    <MESSAGE value="added colours, option to specify the number of sides, general fixes and fixed formatting" />
+    <option name="LAST_COMMIT_MESSAGE" value="added colours, option to specify the number of sides, general fixes and fixed formatting" />
   </component>
 </project>

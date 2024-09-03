@@ -7,10 +7,10 @@ from turtle import Screen
 px2cm = 0.0264583333
 
 #COLOUR CONSTANTS
-BG = "#1FFFC7"
+BG = "#1D4A5D"
 POLYGON = "#C26ED1"
 CIRCLE = "#531D5D"
-TEXT = "#1D4A5D"
+TEXT = "#1FFFC7"
 DOT = "#1B0C1D"
 
 mode("logo")
