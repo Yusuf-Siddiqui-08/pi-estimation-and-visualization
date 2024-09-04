@@ -84,3 +84,9 @@ For the controls, I used the listen method and everytime the user inputted a key
 | 1000            	| 49.483152130933064 	| 49.48282654549867  	| 3.141571982780341  	| 0.000020670809452116856  	| 63.49086785316467  	|
 | 2500            	| 49.483152130933064 	| 49.483100037209645 	| 3.141589346256858  	| 0.000003307332935076346  	| 158.71818161010742 	|
 | 5000            	| 49.483152130933064 	| 49.48313910744267  	| 3.1415918267527796 	| 0.0000008268370135233738 	| 314.69306540489197 	|
+
+### Graphs:
+#### Relation of the number of sides on the polygon to the $\pi$ error
+![Relation of the number of sides on the polygon to the $\pi$ error](/read_me_src/pi_error_num_sides.png)
+#### Relation of the number of sides on the polygon to the render duration
+![Relation of the number of sides on the polygon to the render duration](/read_me_src/render_duration_num_sides.png)
