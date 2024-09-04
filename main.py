@@ -3,6 +3,7 @@ import turtle
 from decimal import *
 from turtle import *
 from turtle import Screen
+import time
 
 px2cm = 0.0264583333
 
@@ -63,6 +64,7 @@ def calculateAreas(polySideLength):
 
 
 def drawVizualization():
+    startTime = time.time()
     rendering = True
     t.penup()
     t.clear()
@@ -131,6 +133,9 @@ def drawVizualization():
     t.goto(0, 0)
     t.dot(5, DOT)
     rendering = False
+    endTime = time.time()
+    renderDuration = endTime - startTime
+    print("Render Duration: " + str(renderDuration))
 
 
 def clickLeft(x, y):
@@ -148,6 +153,7 @@ def clickRight(x, y):
 
 
 def execMain(_init: bool = True, setN = False):
+    rendering = False
     t.clear()
     t.goto(0, 0)
     t.penup()
