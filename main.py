@@ -1,9 +1,11 @@
 import math
 import turtle
+from csv import DictWriter
 from decimal import *
 from turtle import *
 from turtle import Screen
 import time
+import csv
 
 px2cm = 0.0264583333
 
@@ -140,6 +142,7 @@ def drawVizualization():
     renderInfo = areaInfo
     for key, value in renderInfo.items():
         renderInfo[key] = float(value)
+    renderInfo["number of sides"] = n
     renderInfo["render duration"] = renderDuration
     print(renderInfo)
 
