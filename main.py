@@ -57,13 +57,15 @@ def calculateAreas(polySideLength):
     polygonApothem = r * math.cos(math.radians(A))
     polygonArea = n * ((polySideLength * polygonApothem) / 2)
     piEstimate = polygonArea / (r ** 2)
-    _areaInfo = {"actual circle area": Decimal((math.pi * (r ** 2))),  # pi * radius squared
-                 "polygon area": Decimal(polygonArea),
+    _areaInfo = {"actual circle area": (Decimal((math.pi * (r ** 2)))) * Decimal(px2cm) ** 2,  # pi * radius squared
+                 "polygon area": (Decimal(polygonArea)) * Decimal(px2cm) ** 2,
                  "pi estimate": Decimal(piEstimate)}
+    _areaInfo["pi error"] = Decimal(math.pi) - _areaInfo["pi estimate"]
     return _areaInfo
 
 
 def drawVizualization():
+    global rendering
     startTime = time.time()
     rendering = True
     t.penup()
@@ -115,18 +117,18 @@ def drawVizualization():
     t.setheading(0)
     spacing = 20
     t.color(CIRCLE)
-    t.write("Actual Area (area of circle using pi): " + str(areaInfo["actual circle area"] * Decimal(px2cm) ** 2) + "cm²", False, align="left", font=("Arial", 12, "bold"))
+    t.write("Actual Area (area of circle using pi): " + str(areaInfo["actual circle area"]) + "cm²", False, align="left", font=("Arial", 12, "bold"))
     t.forward(-spacing)
     t.color(TEXT)
     t.write("Number of sides on the polygon: " + str(n), False, align="left", font=("Arial", 12, "bold"))
     t.forward(-spacing)
     t.color(POLYGON)
-    t.write("Area of polygon (without using pi): " + str(areaInfo["polygon area"] * Decimal(px2cm) ** 2) + "cm²", False, align="left", font=("Arial", 12, "bold"))
+    t.write("Area of polygon (without using pi): " + str(areaInfo["polygon area"]) + "cm²", False, align="left", font=("Arial", 12, "bold"))
     t.forward(-spacing)
     t.color(TEXT)
     t.write("Pi Estimation: " + str(areaInfo["pi estimate"]), False, align="left", font=("Arial", 12, "bold"))
     t.forward(-spacing)
-    t.write("Pi Estimation Error: " + str(Decimal(math.pi) - areaInfo["pi estimate"]), False, align="left", font=("Arial", 12, "bold"))
+    t.write("Pi Estimation Error: " + str(areaInfo["pi error"]), False, align="left", font=("Arial", 12, "bold"))
     t.forward(-spacing)
     t.penup()
     # render center dot
@@ -135,7 +137,11 @@ def drawVizualization():
     rendering = False
     endTime = time.time()
     renderDuration = endTime - startTime
-    print("Render Duration: " + str(renderDuration))
+    renderInfo = areaInfo
+    for key, value in renderInfo.items():
+        renderInfo[key] = float(value)
+    renderInfo["render duration"] = renderDuration
+    print(renderInfo)
 
 
 def clickLeft(x, y):
