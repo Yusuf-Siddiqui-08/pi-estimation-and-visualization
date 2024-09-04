@@ -48,8 +48,7 @@ def getPositions(_angle, _n, _r):
         t.forward(_r)
         t.right(_angle)
         _positions.append(t.pos())
-    t.goto(_positions[0][0], _positions[0][1])
-    return {"positions": _positions}
+    return  _positions
 
 
 def calculateAreas(polySideLength):
@@ -67,7 +66,12 @@ def drawVizualization():
     rendering = True
     t.penup()
     t.clear()
+    t.goto(0,0)
+    t.color(TEXT)
+    t.write("Loading...", move=False, align="center", font=("Arial", 50, "bold"))
+    info = getPositions(angle, n, r)
     # render circle
+    t.clear()
     t.color(CIRCLE)
     t.begin_fill()
     t.goto((0 + r), 0)
@@ -77,9 +81,10 @@ def drawVizualization():
     t.end_fill()
     t.penup()
     # render polygon
-    info = getPositions(angle, n, r)
-    positions = info["positions"]
+    positions = info
     start = positions[0]
+    t.penup()
+    t.goto(start[0], start[1])
     t.begin_poly()
     t.color(POLYGON)
     t.begin_fill()
