@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a770f19-2ad2-4106-97bc-9083bb370bb5" name="Changes" comment="added benchmark/test results to readme.md">
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/read_me_src/readme.md" afterDir="false" />
-    </list>
+    <list default="true" id="3a770f19-2ad2-4106-97bc-9083bb370bb5" name="Changes" comment="added graphs to read me" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,9 +53,20 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/rehan/PycharmProjects/pi-estimation",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\rehan\PycharmProjects\pi-estimation" />
+      <recent name="C:\Users\rehan\PycharmProjects\pi-estimation\read_me_src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\rehan\PycharmProjects\pi-estimation\read_me_src" />
+      <recent name="C:\Users\rehan\PycharmProjects\pi-estimation/read_me_src" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -146,7 +155,23 @@
       <option name="project" value="LOCAL" />
       <updated>1725491363031</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="added test results">
+      <option name="closed" value="true" />
+      <created>1725491989514</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1725491989514</updated>
+    </task>
+    <task id="LOCAL-00011" summary="added graphs to read me">
+      <option name="closed" value="true" />
+      <created>1725492232279</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1725492232279</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -181,6 +206,8 @@
     <MESSAGE value="added print of render info" />
     <MESSAGE value="added number of sides to render info" />
     <MESSAGE value="added benchmark/test results to readme.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="added benchmark/test results to readme.md" />
+    <MESSAGE value="added test results" />
+    <MESSAGE value="added graphs to read me" />
+    <option name="LAST_COMMIT_MESSAGE" value="added graphs to read me" />
   </component>
 </project>
