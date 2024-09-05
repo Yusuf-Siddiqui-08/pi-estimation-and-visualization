@@ -1,11 +1,9 @@
 import math
 import turtle
-from csv import DictWriter
 from decimal import *
 from turtle import *
 from turtle import Screen
 import time
-import csv
 
 px2cm = 0.0264583333
 
