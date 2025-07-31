@@ -1,5 +1,31 @@
 # Pi Estimation and Visualization
 
+## NEW: Accuracy vs Time Analysis
+
+This repository now includes comprehensive tools to **compare the accuracy of pi estimates with the time required to calculate them**. The analysis helps you find optimal trade-offs between computational cost and precision.
+
+### Key Features:
+- **Efficiency Metrics**: Accuracy per second, error reduction rates, composite efficiency scores
+- **Optimal Configuration Finding**: Automatically identifies best polygon sizes for different use cases
+- **Command-Line Interface**: Works without GUI for server environments
+- **Diminishing Returns Analysis**: Shows where additional computation provides minimal benefit
+
+### Quick Start:
+```bash
+# Run full accuracy vs time analysis
+python3 main.py
+
+# Analyze specific polygon size (e.g., 100 sides)
+python3 main.py 100
+
+# Standalone analysis module
+python3 pi_analysis.py
+```
+
+See [ACCURACY_TIME_ANALYSIS.md](ACCURACY_TIME_ANALYSIS.md) for detailed documentation.
+
+---
+
 ## Estimation:
 
 ### How we know the area of a circle formula
