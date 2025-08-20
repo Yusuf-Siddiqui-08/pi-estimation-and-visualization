@@ -1,5 +1,23 @@
 # Pi Estimation and Visualization
 
+## Description
+
+This project demonstrates the mathematical estimation of π (pi) using **Archimedes' polygon method**, combined with interactive visualization and comprehensive performance analysis. The program inscribes regular polygons inside a circle and uses their areas to approximate π, illustrating how increasing the number of polygon sides improves accuracy while requiring more computation time.
+
+**Key Educational Concepts:**
+- **Archimedes' Method**: Historical approach to estimating π using inscribed polygons
+- **Geometric Relationships**: Understanding apothems, polygon areas, and circle approximations  
+- **Mathematical Convergence**: How polygon-based estimates approach the true value of π
+- **Computational Trade-offs**: Balancing accuracy against calculation time and rendering performance
+
+**Interactive Features:**
+- **Real-time Visualization**: Python Turtle graphics showing polygon inscribed in circle
+- **User Controls**: Mouse clicks and keyboard inputs to adjust polygon complexity
+- **Performance Analysis**: Efficiency metrics comparing accuracy vs computation time
+- **Benchmarking Tools**: Comprehensive testing across different polygon sizes (3 to 5000+ sides)
+
+The project serves as both an educational tool for understanding geometric approximation methods and a practical demonstration of algorithm performance optimization.
+
 ## NEW: Accuracy vs Time Analysis
 
 This repository now includes comprehensive tools to **compare the accuracy of pi estimates with the time required to calculate them**. The analysis helps you find optimal trade-offs between computational cost and precision.
